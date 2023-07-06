@@ -149,5 +149,15 @@
       "response": "",
       "history": ""
     }
+  },
+  "jinyong": {
+    "file_name": "/nas/yuliao/jinyong.txt",
+    "file_sha1": "73c75f4b5d6233a6c03c2a8bb2547da45f91ca9a",
+    "columns": {
+      "prompt": "text",
+      "query": "",
+      "response": "",
+      "history": ""
+    }
   }
 }
