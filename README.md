@@ -9,6 +9,8 @@
 
 ## Changelog
 
+[23/07/05] Now we support training the Falcon-7B/40B models in this repo. Try `--model_name_or_path tiiuae/falcon-7b` and `--lora_target query_key_value` arguments to use the Falcon model.
+
 [23/06/29] We provide a reproducible example of training a chat model using instruction-following datasets, see this [HuggingFace Repo](https://huggingface.co/hiyouga/baichuan-7b-sft) for details.
 
 [23/06/22] Now we align the [demo API](src/api_demo.py) with the [OpenAI's](https://platform.openai.com/docs/api-reference/chat) format where you can insert the fine-tuned model in arbitrary ChatGPT-based applications.
@@ -23,6 +25,7 @@
 
 - [LLaMA](https://github.com/facebookresearch/llama) (7B/13B/33B/65B)
 - [BLOOM](https://huggingface.co/bigscience/bloom) & [BLOOMZ](https://huggingface.co/bigscience/bloomz) (560M/1.1B/1.7B/3B/7.1B/176B)
+- [Falcon](https://huggingface.co/tiiuae/falcon-7b) (7B/40B)
 - [baichuan](https://huggingface.co/baichuan-inc/baichuan-7B) (7B)
 
 ## Supported Training Approaches
@@ -83,9 +86,9 @@ huggingface-cli login
 
 - Python 3.8+ and PyTorch 1.13.1+
 - 🤗Transformers, Datasets, Accelerate, PEFT and TRL
-- jieba, rouge_chinese and nltk (used at evaluation)
+- jieba, rouge-chinese and nltk (used at evaluation)
 - gradio and mdtex2html (used in web_demo.py)
-- uvicorn and fastapi (used in api_demo.py)
+- uvicorn, fastapi and sse-starlette (used in api_demo.py)
 
 And **powerful GPUs**!
 
@@ -282,6 +285,8 @@ This repository is licensed under the [Apache-2.0 License](LICENSE).
 Please follow the [Model Card](https://github.com/facebookresearch/llama/blob/main/MODEL_CARD.md) to use the LLaMA models.
 
 Please follow the [RAIL License](https://huggingface.co/spaces/bigscience/license) to use the BLOOM & BLOOMZ models.
+
+Please follow the [Apache-2.0 License](LICENSE) to use the Falcon models.
 
 Please follow the [baichuan-7B License](https://huggingface.co/baichuan-inc/baichuan-7B/resolve/main/baichuan-7B%20%E6%A8%A1%E5%9E%8B%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE.pdf) to use the baichuan-7B model.
 
