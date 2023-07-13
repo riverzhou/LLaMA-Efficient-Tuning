@@ -159,5 +159,15 @@
       "response": "",
       "history": ""
     }
+  },
+  "yitian": {
+    "file_name": "/nas/yuliao/yitian.txt",
+    "file_sha1": "55974b37da98886116852e31cdd400ba56941509",
+    "columns": {
+      "prompt": "text",
+      "query": "",
+      "response": "",
+      "history": ""
+    }
   }
 }
